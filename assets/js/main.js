@@ -83,8 +83,33 @@ sr.reveal(`.about__data, .join__image`, {origin: 'right'})
 sr.reveal(`.about__image, .join__data`, {origin: 'left'})
 sr.reveal(`.popular__card`, {interval: 200})
 
+
 /*=============== SWIPER SHOE ===============*/
-let swiperShoes = new Swiper('.home__swiper', {
+let swiperHome = new Swiper('.home__swiper', {
+    loop: true,
+    spaceBetween: -24,
+    grabCursor: true,
+    slidesPerView: 'auto',
+    centeredSlides: 'auto',
+    pagination:{
+        clickable: true,
+    },
+
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+
+    breakpoints: {
+        1220: {
+            spaceBetween: 3,
+        }
+    }
+  });
+
+
+
+let swiperShoes = new Swiper('.home__swipero', {
     loop: true,
     spaceBetween: 32,
     grabCursor: true,
